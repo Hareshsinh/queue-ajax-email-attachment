@@ -34,18 +34,18 @@ class HomeController extends Controller
         return response()->json(['error'=>$validator->errors()->all()]);
     }
 
-    /**
-     * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function emailList(Request $request)
-    {
-        $formatted_tags = [
-            ['id' => 'haresh.sisodiya@viitor.cloud', 'text' => 'haresh'],
-            ['id' => 'devat.sisodiya@viitor.cloud', 'text' => 'devat'],
-            ['id' => 'dhaval.sisodiya@viitor.cloud', 'text' => 'dhaval'],
-        ];
-
-        return \Response::json($formatted_tags);
-    }
+//    /**
+//     * @param Request $request
+//     * @return \Illuminate\Http\JsonResponse
+//     */
+//    public function emailList(Request $request)
+//    {
+//        $formatted_tags = [
+//            ['id' => 'haresh.sisodiya@viitor.cloud', 'text' => 'haresh'],
+//            ['id' => 'devat.karetha@viitor.cloud', 'text' => 'devat'],
+//            ['id' => 'dhaval.joshi@viitor.cloud', 'text' => 'dhaval'],
+//        ];
+//
+//        return \Response::json($formatted_tags);
+//    }
 }
