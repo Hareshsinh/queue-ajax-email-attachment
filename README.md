@@ -16,11 +16,7 @@ Generate a new application key
 
     php artisan key:generate
 
-Run migration for add database tables
-
-    php artisan migrate
-    
-or migration with add data
+migration with add data
 
     php artisan migrate --seed
     
